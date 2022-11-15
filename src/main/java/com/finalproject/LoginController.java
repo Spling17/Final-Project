@@ -37,11 +37,9 @@ public class LoginController implements Initializable {
 
         if (loginModel.isDatabaseConnected()) {
             // inject a text to dbStatus that db is connected
-            // this.dbStatus.setText("Connected");
             System.out.println("Connected to Database");
         } else {
             System.out.println("Not Connected to Database");
-            // this.dbStatus.setText("Not Connected");
         }
 
     }
@@ -50,8 +48,6 @@ public class LoginController implements Initializable {
     public void Login(ActionEvent event) {
 
         if (this.loginModel.isLogin(this.username.getText(), this.password.getText())) {
-            // this.loginStatus.setText("You have successfully logged in!");
-
             Stage stage = (Stage) this.loginBtn.getScene().getWindow();
             stage.close();
 
