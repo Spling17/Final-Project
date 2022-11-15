@@ -4,6 +4,7 @@ module com.finalproject {
     requires java.sql;
 
     opens com.finalproject to javafx.fxml;
-    opens com.finalproject.home to javafx.base;
+
+    // opens com.finalproject.home to javafx.base;
     exports com.finalproject;
 }
